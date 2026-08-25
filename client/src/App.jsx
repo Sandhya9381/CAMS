@@ -208,7 +208,7 @@ function Login({ onSignup, showNotification }) {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/login",
+        "https://cams-backend-gdgc.onrender.com/api/auth/login",
         {
           method: "POST",
 
@@ -376,7 +376,7 @@ function Signup({ onBackToLogin }) {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/signup",
+        "https://cams-backend-gdgc.onrender.com/api/auth/signup",
         {
           method: "POST",
 
@@ -1122,7 +1122,7 @@ function MyRequests({ user, onBack }) {
       try {
 
         const response = await fetch(
-          `http://localhost:5000/api/requests/user/${user.id}`
+          `https://cams-backend-gdgc.onrender.com/api/requests/user/${user.id}`
         );
 
         const data =
@@ -1470,7 +1470,7 @@ function AdminRequests({ user, onBack }) {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/requests"
+        "https://cams-backend-gdgc.onrender.com/api/requests"
       );
 
       const data =
@@ -1534,7 +1534,7 @@ function AdminRequests({ user, onBack }) {
 
 
         const response = await fetch(
-          `http://localhost:5000/api/requests/${requestId}/${action}`,
+          `https://cams-backend-gdgc.onrender.com/api/requests/${requestId}/${action}`,
           {
             method: "PUT",
 
@@ -2012,7 +2012,7 @@ function BorrowedAssets({ user, onBack }) {
         try {
 
           const response = await fetch(
-            "http://localhost:5000/api/requests"
+            "https://cams-backend-gdgc.onrender.com/api/requests"
           );
 
 
@@ -2095,7 +2095,7 @@ function BorrowedAssets({ user, onBack }) {
     try {
 
       const response = await fetch(
-        `http://localhost:5000/api/requests/${requestId}/return`,
+        `https://cams-backend-gdgc.onrender.com/api/requests/${requestId}/return`,
         {
           method: "PUT",
 
@@ -2551,7 +2551,7 @@ function AssetManagement({ user, onBack }) {
 
 
       const response = await fetch(
-        "http://localhost:5000/api/assets"
+        "https://cams-backend-gdgc.onrender.com/api/assets"
       );
 
 
@@ -2605,7 +2605,7 @@ function AssetManagement({ user, onBack }) {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/requests"
+        "https://cams-backend-gdgc.onrender.com/api/requests"
       );
 
 
@@ -2845,7 +2845,7 @@ function AssetManagement({ user, onBack }) {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/assets",
+            "https://cams-backend-gdgc.onrender.com/api/assets",
             {
               method: "POST",
 
@@ -2929,7 +2929,7 @@ function AssetManagement({ user, onBack }) {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/requests",
+            "https://cams-backend-gdgc.onrender.com/api/requests",
             {
               method: "POST",
 
