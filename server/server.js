@@ -242,7 +242,11 @@ app.post("/api/auth/login", async (req, res) => {
 
         const user = result.rows[0];
 
-
+console.log("LOGIN DEBUG:", {
+    email: user.email,
+    role: user.role,
+    passwordHashPrefix: user.password ? user.password.substring(0, 7) : null
+});
         // Compare password
 
         const passwordMatch = await bcrypt.compare(
